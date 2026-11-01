@@ -1,0 +1,177 @@
+[
+    {
+        "category": "Nationale 1 Dames",
+        "pos": "10.",
+        "team": "VBC Zandhoven A",
+        "ptn": 4.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Nationale 3 Dames C",
+        "pos": "07.",
+        "team": "VBC Zandhoven B",
+        "ptn": 10.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Nationale 3 Dames C (reserven)",
+        "pos": "01.",
+        "team": "VBC Zandhoven B",
+        "ptn": 17.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Dames promo 2 A",
+        "pos": "04a.",
+        "team": "VBC Zandhoven C",
+        "ptn": 12.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Dames promo 2 B",
+        "pos": "02.",
+        "team": "VBC Zandhoven D",
+        "ptn": 19.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Meisjes U17 Niveau 1 A",
+        "pos": "01.",
+        "team": "VBC Zandhoven A",
+        "ptn": 21.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Meisjes U17 Niveau 1 A",
+        "pos": "04.",
+        "team": "VBC Zandhoven B",
+        "ptn": 11.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Meisjes U17 Niveau 2 C",
+        "pos": "05.",
+        "team": "VBC Zandhoven C",
+        "ptn": 16.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Meisjes U15 Niveau 1 C",
+        "pos": "01.",
+        "team": "VBC Zandhoven A",
+        "ptn": 15.0,
+        "wed": 5.0
+    },
+    {
+        "category": "Meisjes U15 Niveau 1 C",
+        "pos": "03.",
+        "team": "VBC Zandhoven B",
+        "ptn": 11.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Meisjes U15 Niveau 2 A",
+        "pos": "02.",
+        "team": "VBC Zandhoven C (+)",
+        "ptn": 16.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Meisjes U15 Niveau 2 B",
+        "pos": "04b.",
+        "team": "VBC Zandhoven D",
+        "ptn": 13.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Meisjes U13 Niveau 1 A",
+        "pos": "02.",
+        "team": "VBC Zandhoven C",
+        "ptn": 15.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Meisjes U13 Niveau 1 E",
+        "pos": "01.",
+        "team": "VBC Zandhoven A",
+        "ptn": 15.0,
+        "wed": 5.0
+    },
+    {
+        "category": "Meisjes U13 Niveau 1 E",
+        "pos": "02.",
+        "team": "VBC Zandhoven B",
+        "ptn": 14.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Meisjes U13 Niveau 2   A",
+        "pos": "06.",
+        "team": "VBC Zandhoven D",
+        "ptn": 13.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Meisjes U13 Niveau 2   A",
+        "pos": "09.",
+        "team": "VBC Zandhoven E",
+        "ptn": 7.0,
+        "wed": 5.0
+    },
+    {
+        "category": "Meisjes U11 Niveau 1 A",
+        "pos": "02.",
+        "team": "VBC Zandhoven A",
+        "ptn": 15.0,
+        "wed": 5.0
+    },
+    {
+        "category": "Meisjes U11 Niveau 1 A",
+        "pos": "03.",
+        "team": "VBC Zandhoven B",
+        "ptn": 13.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Meisjes U11 Niveau 1 B",
+        "pos": "04.",
+        "team": "VBC Zandhoven C",
+        "ptn": 8.0,
+        "wed": 6.0
+    },
+    {
+        "category": "U11 Niveau 2   A",
+        "pos": "05b.",
+        "team": "VBC Zandhoven E",
+        "ptn": 11.0,
+        "wed": 6.0
+    },
+    {
+        "category": "U11 Niveau 2   A",
+        "pos": "05c.",
+        "team": "VBC Zandhoven D",
+        "ptn": 11.0,
+        "wed": 6.0
+    },
+    {
+        "category": "Dames promo 4 (1e gewest Herentals)",
+        "pos": "03b.",
+        "team": "VBC Zandhoven E",
+        "ptn": 12.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Dames promo 5 (2e gewest Herentals)",
+        "pos": "01a.",
+        "team": "VBC Zandhoven G",
+        "ptn": 18.0,
+        "wed": 7.0
+    },
+    {
+        "category": "Dames promo 5 (2e gewest Herentals)",
+        "pos": "10.",
+        "team": "VBC Zandhoven F",
+        "ptn": 7.0,
+        "wed": 7.0
+    }
+]
