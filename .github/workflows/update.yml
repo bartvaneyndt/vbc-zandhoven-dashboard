@@ -21,7 +21,7 @@ jobs:
         run: pip install xlrd
 
       - name: Run Python script
-        run: python update_dashboard.py
+        run: python "Opladen gegevens ranking.py"
 
       - name: Commit and push changes if data updated
         run: |
