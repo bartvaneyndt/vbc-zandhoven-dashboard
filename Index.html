@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBC Zandhoven - Live Standen Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6600;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .category-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #ffaa00;
+            margin-top: 0;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid #2c2c2c;
+        }
+        th {
+            background-color: #2a2a2a;
+            color: #ccc;
+        }
+        /* Accentkleur voor VBC Zandhoven rijen */
+        .zandhoven-row {
+            background-color: rgba(255, 102, 0, 0.25);
+            font-weight: bold;
+            color: #ff9944;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>VBC Zandhoven</h1>
+    <div class="subtitle">Live Ranglijsten & Competitiestanden</div>
+
+    <div id="dashboard-container" class="container">
+        <p class="center" style="grid-column: 1 / -1;">Gegevens worden geladen...</p>
+    </div>
+
+    <script>
+        async function loadStandings() {
+            try {
+                // Haalt het JSON-bestand op dat door je GitHub Action wordt bijgewerkt
+                const response = await fetch('teams_data.json');
+                if (!response.ok) throw new Error('Kon teams_data.json niet ophalen');
+                
+                const data = await response.json();
+                const container = document.getElementById('dashboard-container');
+                container.innerHTML = '';
+
+                // Loop door elke categorie/reeks in de JSON
+                for [const [category, teams] of Object.entries(data)] {
+                    const card = document.createElement('div');
+                    card.className = 'category-card';
+
+                    let tableHTML = `
+                        <h2>${category}</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px;">P</th>
+                                    <th>Ploeg</th>
+                                    <th class="center" style="width: 50px;">Ptn</th>
+                                    <th class="center" style="width: 50px;">Wed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+
+                    teams.forEach(team => {
+                        // Bepaalt of deze rij VBC Zandhoven is voor de opmaak
+                        const rowClass = team.is_zandhoven ? 'zandhoven-row' : '';
+                        tableHTML += `
+                            <tr class="${rowClass}">
+                                <td>${team.pos}</td>
+                                <td>${team.team}</td>
+                                <td class="center">${team.ptn}</td>
+                                <td class="center">${team.wed}</td>
+                            </tr>
+                        `;
+                    });
+
+                    tableHTML += `</tbody></table>`;
+                    card.innerHTML = tableHTML;
+                    container.appendChild(card);
+                }
+
+            } catch (error) {
+                console.error('Fout bij het laden van de standen:', error);
+                document.getElementById('dashboard-container').innerHTML = 
+                    `<p class="center" style="grid-column: 1 / -1; color: #ff4444;">Fout bij laden van teams_data.json. Controleer of het bestand bestaat.</p>`;
+            }
+        }
+
+        // Laad direct bij openen en vernieuw elke 5 minuten automatisch
+        loadStandings();
+        setInterval(loadStandings, 300000);
+    </script>
+
+</body>
+</html>
