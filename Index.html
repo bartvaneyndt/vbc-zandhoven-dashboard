@@ -93,7 +93,7 @@
                 container.innerHTML = '';
 
                 // Loop door elke categorie/reeks in de JSON
-                for [const [category, teams] of Object.entries(data)] {
+                for (const [category, teams] of Object.entries(data)) {
                     const card = document.createElement('div');
                     card.className = 'category-card';
 
