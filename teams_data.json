@@ -46,7 +46,7 @@
             "pos": "07.",
             "team": "Hellvoc Hemiksem-Schelle A",
             "ptn": 7.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -71,17 +71,17 @@
             "is_zandhoven": true
         },
         {
-            "pos": "11a.",
-            "team": "Koninklijke Msiks Blaasveld VC A",
-            "ptn": 0.0,
-            "wed": 7.0,
+            "pos": "11.",
+            "team": "Wevoc Wellen A",
+            "ptn": 3.0,
+            "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "11b.",
-            "team": "Wevoc Wellen A",
+            "pos": "12.",
+            "team": "Koninklijke Msiks Blaasveld VC A",
             "ptn": 0.0,
-            "wed": 5.0,
+            "wed": 7.0,
             "is_zandhoven": false
         }
     ],
@@ -381,23 +381,23 @@
         },
         {
             "pos": "06.",
+            "team": "V.C. Kasterlee B",
+            "ptn": 10.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "07.",
             "team": "VC Geel B",
             "ptn": 9.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "07.",
+            "pos": "08.",
             "team": "Volley Noorderkempen D",
             "ptn": 8.0,
             "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08.",
-            "team": "V.C. Kasterlee B",
-            "ptn": 7.0,
-            "wed": 6.0,
             "is_zandhoven": false
         },
         {
@@ -418,7 +418,7 @@
             "pos": "09c.",
             "team": "BE Vastgoed Olvoc Olen B",
             "ptn": 5.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
