@@ -87,42 +87,42 @@
     ],
     "Nationale 3 Dames C": [
         {
-            "pos": "01a.",
+            "pos": "01.",
+            "team": "Vamos Stekene - Sint-Gillis-Waas B",
+            "ptn": 18.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "02a.",
             "team": "Tamera Lummen A",
             "ptn": 15.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "01b.",
-            "team": "Vamos Stekene - Sint-Gillis-Waas B",
-            "ptn": 15.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "01c.",
+            "pos": "02b.",
             "team": "KwadrO Amigos Sint-Antonius Zoersel B",
             "ptn": 15.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
             "pos": "04.",
+            "team": "VST Lions Groot-Turnhout A",
+            "ptn": 14.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "05.",
             "team": "Grinta Valentino Lint B",
             "ptn": 12.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "05a.",
-            "team": "VST Lions Groot-Turnhout A",
-            "ptn": 11.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05b.",
+            "pos": "06.",
             "team": "VC Oudegem B",
             "ptn": 11.0,
             "wed": 6.0,
@@ -167,7 +167,7 @@
             "pos": "12.",
             "team": "Geel Zwart Wijnegem A",
             "ptn": 2.0,
-            "wed": 5.0,
+            "wed": 6.0,
             "is_zandhoven": false
         }
     ],
@@ -187,29 +187,29 @@
             "is_zandhoven": false
         },
         {
-            "pos": "03.",
+            "pos": "03a.",
+            "team": "Vamos Stekene - Sint-Gillis-Waas B",
+            "ptn": 13.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "03b.",
             "team": "Grinta Valentino Lint B",
             "ptn": 13.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04.",
+            "pos": "05.",
             "team": "Golazo Haasrode Leuven B",
             "ptn": 12.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "05a.",
+            "pos": "06.",
             "team": "Tamera Lummen A",
-            "ptn": 11.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05b.",
-            "team": "Vamos Stekene - Sint-Gillis-Waas B",
             "ptn": 11.0,
             "wed": 6.0,
             "is_zandhoven": false
@@ -237,23 +237,23 @@
         },
         {
             "pos": "10a.",
-            "team": "Volley Beerse A",
+            "team": "Geel Zwart Wijnegem A",
             "ptn": 5.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
             "pos": "10b.",
-            "team": "Davost Sint-Truiden A",
+            "team": "Volley Beerse A",
             "ptn": 5.0,
-            "wed": 8.0,
+            "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "12.",
-            "team": "Geel Zwart Wijnegem A",
-            "ptn": 4.0,
-            "wed": 5.0,
+            "pos": "10c.",
+            "team": "Davost Sint-Truiden A",
+            "ptn": 5.0,
+            "wed": 8.0,
             "is_zandhoven": false
         }
     ],
@@ -1107,23 +1107,23 @@
         },
         {
             "pos": "02.",
+            "team": "VC Heist Herenthout",
+            "ptn": 19.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "03.",
             "team": "VBC Zandhoven G",
             "ptn": 18.0,
             "wed": 7.0,
             "is_zandhoven": true
         },
         {
-            "pos": "03.",
-            "team": "VC Heist Herenthout",
-            "ptn": 16.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
             "pos": "04.",
             "team": "Volley Westerlo F",
             "ptn": 15.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
@@ -1134,52 +1134,52 @@
             "is_zandhoven": false
         },
         {
-            "pos": "06a.",
+            "pos": "06.",
+            "team": "Volley Westerlo D",
+            "ptn": 13.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "07.",
+            "team": "VC St.Janskring Herentals",
+            "ptn": 12.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08a.",
             "team": "Bovoc Bouwel C",
             "ptn": 10.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "06b.",
-            "team": "Volley Westerlo D",
+            "pos": "08b.",
+            "team": "VBC Zandhoven F",
             "ptn": 10.0,
-            "wed": 6.0,
-            "is_zandhoven": false
+            "wed": 8.0,
+            "is_zandhoven": true
         },
         {
-            "pos": "06c.",
-            "team": "VC St.Janskring Herentals",
-            "ptn": 10.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "09.",
+            "pos": "10.",
             "team": "Taelman Construct Mendo Booischot E",
             "ptn": 9.0,
             "wed": 9.0,
             "is_zandhoven": false
         },
         {
-            "pos": "10.",
-            "team": "VBC Zandhoven F",
-            "ptn": 7.0,
-            "wed": 7.0,
-            "is_zandhoven": true
-        },
-        {
-            "pos": "11.",
-            "team": "VC Olen B",
+            "pos": "11a.",
+            "team": "Volley Westerlo E",
             "ptn": 3.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
-            "pos": "12.",
-            "team": "Volley Westerlo E",
-            "ptn": 2.0,
-            "wed": 7.0,
+            "pos": "11b.",
+            "team": "VC Olen B",
+            "ptn": 3.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
