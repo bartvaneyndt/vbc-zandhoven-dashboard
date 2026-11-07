@@ -1,17 +1,17 @@
 {
     "Nationale 1 Dames": [
         {
-            "pos": "01.",
-            "team": "Darta Bevo Roeselare B",
+            "pos": "01a.",
+            "team": "Limal Ottignies Smashing A",
             "ptn": 21.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "02.",
-            "team": "Limal Ottignies Smashing A",
-            "ptn": 18.0,
-            "wed": 6.0,
+            "pos": "01b.",
+            "team": "Darta Bevo Roeselare B",
+            "ptn": 21.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -67,7 +67,7 @@
             "pos": "10.",
             "team": "VBC Zandhoven A",
             "ptn": 4.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": true
         },
         {
@@ -593,8 +593,8 @@
         {
             "pos": "01.",
             "team": "De Gelmers VBC Hoogstraten A",
-            "ptn": 18.0,
-            "wed": 7.0,
+            "ptn": 19.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
@@ -641,23 +641,23 @@
         },
         {
             "pos": "08.",
+            "team": "De Gelmers VBC Hoogstraten B",
+            "ptn": 9.0,
+            "wed": 5.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "09.",
             "team": "Volmar Ekeren A",
             "ptn": 8.0,
             "wed": 5.0,
             "is_zandhoven": false
         },
         {
-            "pos": "09.",
+            "pos": "10.",
             "team": "Volley Beerse A",
             "ptn": 7.0,
             "wed": 5.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10.",
-            "team": "De Gelmers VBC Hoogstraten B",
-            "ptn": 6.0,
-            "wed": 4.0,
             "is_zandhoven": false
         }
     ],
