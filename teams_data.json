@@ -1099,18 +1099,18 @@
     ],
     "Dames promo 5 (2e gewest Herentals)": [
         {
-            "pos": "01a.",
+            "pos": "01.",
+            "team": "FH Nijlen E",
+            "ptn": 21.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "02.",
             "team": "VBC Zandhoven G",
             "ptn": 18.0,
             "wed": 7.0,
             "is_zandhoven": true
-        },
-        {
-            "pos": "01b.",
-            "team": "FH Nijlen E",
-            "ptn": 18.0,
-            "wed": 6.0,
-            "is_zandhoven": false
         },
         {
             "pos": "03.",
@@ -1158,7 +1158,7 @@
             "pos": "09.",
             "team": "Taelman Construct Mendo Booischot E",
             "ptn": 9.0,
-            "wed": 8.0,
+            "wed": 9.0,
             "is_zandhoven": false
         },
         {
