@@ -136,31 +136,31 @@
             "is_zandhoven": true
         },
         {
-            "pos": "08a.",
+            "pos": "08.",
+            "team": "Volley Beerse A",
+            "ptn": 9.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "09.",
             "team": "Golazo Haasrode Leuven B",
             "ptn": 7.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "08b.",
-            "team": "Volley Beerse A",
-            "ptn": 7.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10.",
+            "pos": "10a.",
             "team": "Davost Sint-Truiden A",
             "ptn": 5.0,
             "wed": 8.0,
             "is_zandhoven": false
         },
         {
-            "pos": "11.",
+            "pos": "10b.",
             "team": "Wolvertem Sporting A",
-            "ptn": 4.0,
-            "wed": 6.0,
+            "ptn": 5.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -215,23 +215,23 @@
             "is_zandhoven": false
         },
         {
-            "pos": "07.",
+            "pos": "07a.",
+            "team": "Wolvertem Sporting A",
+            "ptn": 9.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "07b.",
             "team": "VST Lions Groot-Turnhout A",
             "ptn": 9.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "08.",
+            "pos": "09.",
             "team": "VC Oudegem B",
             "ptn": 8.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "09.",
-            "team": "Wolvertem Sporting A",
-            "ptn": 6.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
@@ -246,7 +246,7 @@
             "pos": "10b.",
             "team": "Volley Beerse A",
             "ptn": 5.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
