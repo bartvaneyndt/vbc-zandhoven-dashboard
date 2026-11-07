@@ -182,8 +182,8 @@
         {
             "pos": "02.",
             "team": "KwadrO Amigos Sint-Antonius Zoersel B",
-            "ptn": 14.0,
-            "wed": 7.0,
+            "ptn": 16.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
@@ -215,15 +215,15 @@
             "is_zandhoven": false
         },
         {
-            "pos": "07a.",
-            "team": "VC Oudegem B",
-            "ptn": 8.0,
-            "wed": 6.0,
+            "pos": "07.",
+            "team": "VST Lions Groot-Turnhout A",
+            "ptn": 9.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "07b.",
-            "team": "VST Lions Groot-Turnhout A",
+            "pos": "08.",
+            "team": "VC Oudegem B",
             "ptn": 8.0,
             "wed": 6.0,
             "is_zandhoven": false
@@ -955,49 +955,49 @@
             "is_zandhoven": false
         },
         {
-            "pos": "03.",
+            "pos": "03a.",
             "team": "VOS Schilde A",
             "ptn": 13.0,
             "wed": 5.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04.",
+            "pos": "03b.",
+            "team": "W.E.K. Loenhout B",
+            "ptn": 13.0,
+            "wed": 5.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "03c.",
+            "team": "Heylen Vastgoed Wegi Lille A",
+            "ptn": 13.0,
+            "wed": 6.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "06.",
             "team": "Volmar Ekeren A",
             "ptn": 12.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "05a.",
-            "team": "Heylen Vastgoed Wegi Lille A",
-            "ptn": 11.0,
-            "wed": 5.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05b.",
+            "pos": "07a.",
             "team": "VBC Zandhoven E",
             "ptn": 11.0,
             "wed": 6.0,
             "is_zandhoven": true
         },
         {
-            "pos": "05c.",
+            "pos": "07b.",
             "team": "VBC Zandhoven D",
             "ptn": 11.0,
             "wed": 6.0,
             "is_zandhoven": true
         },
         {
-            "pos": "08a.",
-            "team": "W.E.K. Loenhout B",
-            "ptn": 10.0,
-            "wed": 4.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08b.",
+            "pos": "09.",
             "team": "FH Nijlen B",
             "ptn": 10.0,
             "wed": 6.0,
@@ -1129,8 +1129,8 @@
         {
             "pos": "05.",
             "team": "V O L A K  Vorselaar D",
-            "ptn": 11.0,
-            "wed": 6.0,
+            "ptn": 14.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -1186,7 +1186,7 @@
             "pos": "13.",
             "team": "FH Nijlen F",
             "ptn": 0.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         }
     ]
