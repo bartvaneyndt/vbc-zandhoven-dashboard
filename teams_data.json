@@ -22,15 +22,15 @@
             "is_zandhoven": false
         },
         {
-            "pos": "04a.",
-            "team": "Topsport School Vilvoorde A",
-            "ptn": 12.0,
-            "wed": 6.0,
+            "pos": "04.",
+            "team": "Waremme Volley A",
+            "ptn": 15.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04b.",
-            "team": "Waremme Volley A",
+            "pos": "05.",
+            "team": "Topsport School Vilvoorde A",
             "ptn": 12.0,
             "wed": 6.0,
             "is_zandhoven": false
@@ -60,7 +60,7 @@
             "pos": "09.",
             "team": "KVC Zoersel A",
             "ptn": 5.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
