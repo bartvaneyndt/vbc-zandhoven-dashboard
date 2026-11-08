@@ -394,28 +394,28 @@
             "is_zandhoven": false
         },
         {
-            "pos": "08.",
+            "pos": "08a.",
             "team": "Volley Noorderkempen D",
             "ptn": 8.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "09a.",
+            "pos": "08b.",
             "team": "VST Lions Groot-Turnhout B",
-            "ptn": 5.0,
-            "wed": 7.0,
+            "ptn": 8.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
-            "pos": "09b.",
+            "pos": "10a.",
             "team": "Volley Westerlo A",
             "ptn": 5.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "09c.",
+            "pos": "10b.",
             "team": "BE Vastgoed Olvoc Olen B",
             "ptn": 5.0,
             "wed": 8.0,
@@ -425,7 +425,7 @@
             "pos": "12.",
             "team": "De Gelmers VBC Hoogstraten A",
             "ptn": 0.0,
-            "wed": 5.0,
+            "wed": 6.0,
             "is_zandhoven": false
         }
     ],
@@ -1028,24 +1028,24 @@
         },
         {
             "pos": "03.",
+            "team": "VBC Zandhoven E",
+            "ptn": 15.0,
+            "wed": 8.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "04.",
             "team": "Voc Schriek",
             "ptn": 14.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04a.",
+            "pos": "05.",
             "team": "BE Vastgoed Olvoc Olen D",
             "ptn": 12.0,
             "wed": 7.0,
             "is_zandhoven": false
-        },
-        {
-            "pos": "04b.",
-            "team": "VBC Zandhoven E",
-            "ptn": 12.0,
-            "wed": 7.0,
-            "is_zandhoven": true
         },
         {
             "pos": "06a.",
@@ -1065,7 +1065,7 @@
             "pos": "08a.",
             "team": "V O L A K  Vorselaar C",
             "ptn": 7.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
