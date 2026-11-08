@@ -22,17 +22,17 @@
             "is_zandhoven": false
         },
         {
-            "pos": "04.",
-            "team": "Waremme Volley A",
+            "pos": "04a.",
+            "team": "Topsport School Vilvoorde A",
             "ptn": 15.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "05.",
-            "team": "Topsport School Vilvoorde A",
-            "ptn": 12.0,
-            "wed": 6.0,
+            "pos": "04b.",
+            "team": "Waremme Volley A",
+            "ptn": 15.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -53,7 +53,7 @@
             "pos": "08.",
             "team": "Stalvoc Allimex Beverlo A",
             "ptn": 6.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -87,21 +87,21 @@
     ],
     "Nationale 3 Dames C": [
         {
-            "pos": "01.",
+            "pos": "01a.",
+            "team": "Tamera Lummen A",
+            "ptn": 18.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "01b.",
             "team": "Vamos Stekene - Sint-Gillis-Waas B",
             "ptn": 18.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "02a.",
-            "team": "Tamera Lummen A",
-            "ptn": 15.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "02b.",
+            "pos": "03.",
             "team": "KwadrO Amigos Sint-Antonius Zoersel B",
             "ptn": 15.0,
             "wed": 8.0,
@@ -146,7 +146,7 @@
             "pos": "09.",
             "team": "Golazo Haasrode Leuven B",
             "ptn": 7.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -713,23 +713,23 @@
         },
         {
             "pos": "08.",
+            "team": "Bravoc Ranst",
+            "ptn": 9.0,
+            "wed": 5.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "09.",
             "team": "VC Geel B (+)",
             "ptn": 8.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "09a.",
-            "team": "Bravoc Ranst",
-            "ptn": 6.0,
-            "wed": 4.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "09b.",
+            "pos": "10.",
             "team": "VC Geel C",
-            "ptn": 6.0,
-            "wed": 6.0,
+            "ptn": 7.0,
+            "wed": 7.0,
             "is_zandhoven": false
         }
     ],
