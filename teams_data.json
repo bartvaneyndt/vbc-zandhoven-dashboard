@@ -195,23 +195,23 @@
         },
         {
             "pos": "04.",
+            "team": "Golazo Haasrode Leuven B",
+            "ptn": 14.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "05.",
             "team": "Vamos Stekene - Sint-Gillis-Waas B",
             "ptn": 13.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "05.",
-            "team": "Golazo Haasrode Leuven B",
-            "ptn": 12.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
             "pos": "06.",
             "team": "Tamera Lummen A",
-            "ptn": 11.0,
-            "wed": 6.0,
+            "ptn": 12.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -267,21 +267,21 @@
         },
         {
             "pos": "02.",
+            "team": "Wavoc Waverse A",
+            "ptn": 16.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "03.",
             "team": "Hellvoc Hemiksem-Schelle B",
             "ptn": 15.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "03a.",
+            "pos": "04.",
             "team": "KwadrO Amigos Sint-Antonius Zoersel C",
-            "ptn": 13.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "03b.",
-            "team": "Wavoc Waverse A",
             "ptn": 13.0,
             "wed": 6.0,
             "is_zandhoven": false
@@ -290,7 +290,7 @@
             "pos": "05a.",
             "team": "VBC Zandhoven C",
             "ptn": 12.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": true
         },
         {
