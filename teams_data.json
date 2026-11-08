@@ -187,15 +187,15 @@
             "is_zandhoven": false
         },
         {
-            "pos": "03a.",
-            "team": "Vamos Stekene - Sint-Gillis-Waas B",
-            "ptn": 13.0,
-            "wed": 7.0,
+            "pos": "03.",
+            "team": "Grinta Valentino Lint B",
+            "ptn": 15.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
-            "pos": "03b.",
-            "team": "Grinta Valentino Lint B",
+            "pos": "04.",
+            "team": "Vamos Stekene - Sint-Gillis-Waas B",
             "ptn": 13.0,
             "wed": 7.0,
             "is_zandhoven": false
@@ -216,23 +216,23 @@
         },
         {
             "pos": "07a.",
-            "team": "Wolvertem Sporting A",
+            "team": "VC Oudegem B",
             "ptn": 9.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
             "pos": "07b.",
-            "team": "VST Lions Groot-Turnhout A",
+            "team": "Wolvertem Sporting A",
             "ptn": 9.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "09.",
-            "team": "VC Oudegem B",
-            "ptn": 8.0,
-            "wed": 6.0,
+            "pos": "07c.",
+            "team": "VST Lions Groot-Turnhout A",
+            "ptn": 9.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -664,16 +664,16 @@
     "Meisjes U15 Niveau 2 B": [
         {
             "pos": "01.",
-            "team": "Wavoc Waverse A",
-            "ptn": 17.0,
+            "team": "Voc Schriek",
+            "ptn": 18.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
             "pos": "02.",
-            "team": "Voc Schriek",
-            "ptn": 15.0,
-            "wed": 5.0,
+            "team": "Wavoc Waverse A",
+            "ptn": 17.0,
+            "wed": 6.0,
             "is_zandhoven": false
         },
         {
@@ -698,10 +698,10 @@
             "is_zandhoven": true
         },
         {
-            "pos": "06.",
+            "pos": "04c.",
             "team": "Grinta Valentino Lint C (+)",
-            "ptn": 12.0,
-            "wed": 6.0,
+            "ptn": 13.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
