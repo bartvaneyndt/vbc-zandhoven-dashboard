@@ -433,15 +433,15 @@
         {
             "pos": "01.",
             "team": "VBC Zandhoven A",
-            "ptn": 21.0,
-            "wed": 7.0,
+            "ptn": 24.0,
+            "wed": 8.0,
             "is_zandhoven": true
         },
         {
             "pos": "02.",
             "team": "Wavoc Waverse A",
-            "ptn": 19.0,
-            "wed": 7.0,
+            "ptn": 20.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
