@@ -146,25 +146,41 @@
     scroll-behavior: smooth;
   }
 </style>
-
 <script>
-  function smoothAutoScroll() {
-    const totalHeight = document.body.scrollHeight - window.innerHeight;
-    let currentScroll = window.scrollY;
-    
-    if (currentScroll >= totalHeight - 10) {
-      // Terug naar boven als we onderaan zijn (met een korte pauze)
+  // Pas dit getal aan voor de snelheid (0.4 is heel langzaam en vloeiend, 1.0 is sneller)
+  const scrollSpeed = 0.5; 
+  let isPaused = false;
+
+  function smoothStepScroll() {
+    if (isPaused) return;
+
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const currentScroll = window.scrollY;
+
+    // Als we bijna onderaan zijn
+    if (currentScroll >= maxScroll - 5) {
+      isPaused = true;
       setTimeout(() => {
+        // Scroll in één keer soepel terug naar boven
         window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 2000);
+        setTimeout(() => {
+          isPaused = false; // Hervat het automatisch scrollen na de animatie
+        }, 2000); // Wacht 2 seconden nadat hij boven is voordat hij opnieuw begint
+      }, 2000); // Wacht 2 seconden onderaan
     } else {
-      // Scroll in heel kleine stapjes (bijv. 1 pixel per keer) voor een vloeiend effect
-      window.scrollBy({ top: 1, behavior: 'smooth' });
+      // Verplaats de pagina met een fractie van een pixel per frame
+      window.scrollBy(0, scrollSpeed);
     }
+
+    requestAnimationFrame(smoothStepScroll);
   }
 
-  // Voer dit heel frequent uit (elke 30 milliseconden) voor een vloeiende beweging
-  setInterval(smoothAutoScroll, 30);
+  // Start de loop pas nadat de pagina volledig is geladen
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      requestAnimationFrame(smoothStepScroll);
+    }, 1500);
+  });
 </script>
 </body>
 </html>
