@@ -140,21 +140,31 @@
         loadStandings();
         setInterval(loadStandings, 300000);
     </script>
+<style>
+  /* Zorgt ervoor dat de browser de scrollbeweging automatisch soepel animeert */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 <script>
-  function autoScroll() {
+  function smoothAutoScroll() {
     const totalHeight = document.body.scrollHeight - window.innerHeight;
     let currentScroll = window.scrollY;
     
-    // Als we onderaan zijn, scroll terug naar boven. Anders scroll naar beneden.
     if (currentScroll >= totalHeight - 10) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Terug naar boven als we onderaan zijn (met een korte pauze)
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 2000);
     } else {
-      window.scrollBy({ top: 300, behavior: 'smooth' }); // Pas '300' aan voor de scroll-snelheid
+      // Scroll in heel kleine stapjes (bijv. 1 pixel per keer) voor een vloeiend effect
+      window.scrollBy({ top: 1, behavior: 'smooth' });
     }
   }
 
-  // Voer dit elke 5 seconden uit (pas de tijd gerust aan)
-  setInterval(autoScroll, 5000);
+  // Voer dit heel frequent uit (elke 30 milliseconden) voor een vloeiende beweging
+  setInterval(smoothAutoScroll, 30);
 </script>
 </body>
 </html>
