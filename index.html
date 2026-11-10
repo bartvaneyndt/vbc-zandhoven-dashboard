@@ -140,6 +140,21 @@
         loadStandings();
         setInterval(loadStandings, 300000);
     </script>
+<script>
+  function autoScroll() {
+    const totalHeight = document.body.scrollHeight - window.innerHeight;
+    let currentScroll = window.scrollY;
+    
+    // Als we onderaan zijn, scroll terug naar boven. Anders scroll naar beneden.
+    if (currentScroll >= totalHeight - 10) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollBy({ top: 300, behavior: 'smooth' }); // Pas '300' aan voor de scroll-snelheid
+    }
+  }
 
+  // Voer dit elke 5 seconden uit (pas de tijd gerust aan)
+  setInterval(autoScroll, 5000);
+</script>
 </body>
 </html>
