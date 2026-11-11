@@ -1,6 +1,7 @@
 import json
 import urllib.request
 import xlrd
+import datetime
 
 # De directe URL van Volleyscores
 EXCEL_URL = "https://www.volleyscores.be/index.php?v=2&isActiveSeason=1&t=Rankings%20AH-1717%20VBC%20Zandhoven&a=re&se=13&pi=&si=&ti=&ci=11082&mm=&ssi=&st=&w=%&f=&lng=nl"
@@ -21,6 +22,11 @@ print("2. Bezig met inlezen van alle volledige ranglijsten...")
 wb = xlrd.open_workbook(LOCAL_FILE, ignore_workbook_corruption=True)
 all_rankings = {}
 
+# Reeksen/categorieën die je bewust wilt uitsluiten
+EXCLUDE_CATEGORIES = [
+    "Nationale 3 Dames C (reserven)"
+]
+
 for sheet_name in wb.sheet_names():
     sheet = wb.sheet_by_name(sheet_name)
     current_cat = sheet_name
@@ -33,7 +39,9 @@ for sheet_name in wb.sheet_names():
         # Categorie of reeks herkennen
         if val0 and not val0.startswith("0") and not val0.startswith("1") and val0 not in ["Reserve", "Ploeg", ""]:
             if teams_in_table:
-                all_rankings[current_cat] = teams_in_table
+                # Sla op mits de categorie niet in de uitsluitingslijst staat
+                if current_cat.strip() not in EXCLUDE_CATEGORIES:
+                    all_rankings[current_cat] = teams_in_table
                 teams_in_table = []
             current_cat = val0
 
@@ -49,14 +57,13 @@ for sheet_name in wb.sheet_names():
                     "is_zandhoven": "Zandhoven" in team_name
                 })
 
-    # Sla de laatste categorie van de sheet ook op
-    if teams_in_table:
+    # Sla de laatste categorie van de sheet ook op (als deze niet uitgesloten is)
+    if teams_in_table and current_cat.strip() not in EXCLUDE_CATEGORIES:
         all_rankings[current_cat] = teams_in_table
 
 # -------------------------------------------------------------
-# 3. Herorganiseren en bundelen van de Dames-reeksen
+# 3. Herorganiseren van de Dames-reeksen
 # -------------------------------------------------------------
-# Exacte namen zoals ze in het Excel-bestand (sheet_names) voorkomen:
 preferred_order = [
     "Nationale 1 Dames",
     "Nationale 3 Dames C",
@@ -68,29 +75,26 @@ preferred_order = [
 
 ordered_rankings = {}
 
-# 1. Voeg eerst alle Dames-reeksen toe in de gewenste volgorde
+# Voeg eerst alle gewenste Dames-reeksen toe
 for cat in preferred_order:
     for key in list(all_rankings.keys()):
         if key.strip() == cat.strip():
             ordered_rankings[key] = all_rankings[key]
             break
 
-# 2. Voeg alle overige categorieën (zoals alle jeugdteams U17, U15, U13, U11) toe in hun originele volgorde
+# Voeg alle overige categorieën (jeugd) toe
 for key, value in all_rankings.items():
     if key not in ordered_rankings:
         ordered_rankings[key] = value
 
-# stukje script om generatie json bestand te pushen
-import datetime
-
-# Voeg een metagegeven toe aan je dictionary zodat de inhoud altijd verandert
-all_rankings["_meta"] = {
+# Voeg de meta-timestamp toe voor automatische updates
+ordered_rankings["_meta"] = {
     "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 }
 
-# 4. Sla de geordende resultaten op in teams_data.json
+# 4. Sla op in teams_data.json
 output_json = "teams_data.json"
 with open(output_json, "w", encoding="utf-8") as f:
     json.dump(ordered_rankings, f, ensure_ascii=False, indent=4)
 
-print(f"Klaar! Alle Dames-reeksen mooi gebundeld en opgeslagen in '{output_json}'.")
+print(f"Klaar! Geordend en zonder reserven opgeslagen in '{output_json}'.")
