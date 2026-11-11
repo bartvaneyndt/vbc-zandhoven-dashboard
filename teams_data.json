@@ -171,92 +171,6 @@
             "is_zandhoven": false
         }
     ],
-    "Nationale 3 Dames C (reserven)": [
-        {
-            "pos": "01.",
-            "team": "VBC Zandhoven B",
-            "ptn": 17.0,
-            "wed": 7.0,
-            "is_zandhoven": true
-        },
-        {
-            "pos": "02.",
-            "team": "KwadrO Amigos Sint-Antonius Zoersel B",
-            "ptn": 16.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "03.",
-            "team": "Grinta Valentino Lint B",
-            "ptn": 15.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "04.",
-            "team": "Golazo Haasrode Leuven B",
-            "ptn": 14.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05.",
-            "team": "Vamos Stekene - Sint-Gillis-Waas B",
-            "ptn": 13.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "06.",
-            "team": "Tamera Lummen A",
-            "ptn": 12.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "07a.",
-            "team": "VC Oudegem B",
-            "ptn": 9.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "07b.",
-            "team": "Wolvertem Sporting A",
-            "ptn": 9.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "07c.",
-            "team": "VST Lions Groot-Turnhout A",
-            "ptn": 9.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10a.",
-            "team": "Geel Zwart Wijnegem A",
-            "ptn": 5.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10b.",
-            "team": "Volley Beerse A",
-            "ptn": 5.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10c.",
-            "team": "Davost Sint-Truiden A",
-            "ptn": 5.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        }
-    ],
     "Dames promo 2 A": [
         {
             "pos": "01.",
@@ -426,6 +340,271 @@
             "team": "De Gelmers VBC Hoogstraten A",
             "ptn": 0.0,
             "wed": 6.0,
+            "is_zandhoven": false
+        }
+    ],
+    "Dames promo 4 (1e gewest Herentals)": [
+        {
+            "pos": "01.",
+            "team": "VC Olen A",
+            "ptn": 21.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "02.",
+            "team": "Taelman Construct Mendo Booischot D",
+            "ptn": 16.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "03.",
+            "team": "VBC Zandhoven E",
+            "ptn": 15.0,
+            "wed": 8.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "04.",
+            "team": "Voc Schriek",
+            "ptn": 14.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "05.",
+            "team": "BE Vastgoed Olvoc Olen D",
+            "ptn": 12.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "06a.",
+            "team": "Volleybal Club Berlaar B",
+            "ptn": 10.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "06b.",
+            "team": "V O L A K  Vorselaar B",
+            "ptn": 10.0,
+            "wed": 6.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08a.",
+            "team": "V O L A K  Vorselaar C",
+            "ptn": 7.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08b.",
+            "team": "Volley Westerlo C",
+            "ptn": 7.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08c.",
+            "team": "FH Nijlen D",
+            "ptn": 7.0,
+            "wed": 6.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08d.",
+            "team": "Volley Westerlo B",
+            "ptn": 7.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "12.",
+            "team": "Volleybal Club Berlaar C",
+            "ptn": 0.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        }
+    ],
+    "Dames promo 5 (2e gewest Herentals)": [
+        {
+            "pos": "01.",
+            "team": "FH Nijlen E",
+            "ptn": 21.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "02.",
+            "team": "VC Heist Herenthout",
+            "ptn": 19.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "03.",
+            "team": "VBC Zandhoven G",
+            "ptn": 18.0,
+            "wed": 7.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "04.",
+            "team": "Volley Westerlo F",
+            "ptn": 15.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "05.",
+            "team": "V O L A K  Vorselaar D",
+            "ptn": 14.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "06.",
+            "team": "Volley Westerlo D",
+            "ptn": 13.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "07.",
+            "team": "VC St.Janskring Herentals",
+            "ptn": 12.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08a.",
+            "team": "Bovoc Bouwel C",
+            "ptn": 10.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08b.",
+            "team": "VBC Zandhoven F",
+            "ptn": 10.0,
+            "wed": 8.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "10.",
+            "team": "Taelman Construct Mendo Booischot E",
+            "ptn": 9.0,
+            "wed": 9.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "11a.",
+            "team": "Volley Westerlo E",
+            "ptn": 3.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "11b.",
+            "team": "VC Olen B",
+            "ptn": 3.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "13.",
+            "team": "FH Nijlen F",
+            "ptn": 0.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        }
+    ],
+    "Nationale 3 Dames C (reserven)": [
+        {
+            "pos": "01.",
+            "team": "VBC Zandhoven B",
+            "ptn": 17.0,
+            "wed": 7.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "02.",
+            "team": "KwadrO Amigos Sint-Antonius Zoersel B",
+            "ptn": 16.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "03.",
+            "team": "Grinta Valentino Lint B",
+            "ptn": 15.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "04.",
+            "team": "Golazo Haasrode Leuven B",
+            "ptn": 14.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "05.",
+            "team": "Vamos Stekene - Sint-Gillis-Waas B",
+            "ptn": 13.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "06.",
+            "team": "Tamera Lummen A",
+            "ptn": 12.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "07a.",
+            "team": "VC Oudegem B",
+            "ptn": 9.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "07b.",
+            "team": "Wolvertem Sporting A",
+            "ptn": 9.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "07c.",
+            "team": "VST Lions Groot-Turnhout A",
+            "ptn": 9.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "10a.",
+            "team": "Geel Zwart Wijnegem A",
+            "ptn": 5.0,
+            "wed": 6.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "10b.",
+            "team": "Volley Beerse A",
+            "ptn": 5.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "10c.",
+            "team": "Davost Sint-Truiden A",
+            "ptn": 5.0,
+            "wed": 8.0,
             "is_zandhoven": false
         }
     ],
@@ -1008,185 +1187,6 @@
             "team": "Bravoc Ranst A",
             "ptn": 6.0,
             "wed": 5.0,
-            "is_zandhoven": false
-        }
-    ],
-    "Dames promo 4 (1e gewest Herentals)": [
-        {
-            "pos": "01.",
-            "team": "VC Olen A",
-            "ptn": 21.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "02.",
-            "team": "Taelman Construct Mendo Booischot D",
-            "ptn": 16.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "03.",
-            "team": "VBC Zandhoven E",
-            "ptn": 15.0,
-            "wed": 8.0,
-            "is_zandhoven": true
-        },
-        {
-            "pos": "04.",
-            "team": "Voc Schriek",
-            "ptn": 14.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05.",
-            "team": "BE Vastgoed Olvoc Olen D",
-            "ptn": 12.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "06a.",
-            "team": "Volleybal Club Berlaar B",
-            "ptn": 10.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "06b.",
-            "team": "V O L A K  Vorselaar B",
-            "ptn": 10.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08a.",
-            "team": "V O L A K  Vorselaar C",
-            "ptn": 7.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08b.",
-            "team": "Volley Westerlo C",
-            "ptn": 7.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08c.",
-            "team": "FH Nijlen D",
-            "ptn": 7.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08d.",
-            "team": "Volley Westerlo B",
-            "ptn": 7.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "12.",
-            "team": "Volleybal Club Berlaar C",
-            "ptn": 0.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        }
-    ],
-    "Dames promo 5 (2e gewest Herentals)": [
-        {
-            "pos": "01.",
-            "team": "FH Nijlen E",
-            "ptn": 21.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "02.",
-            "team": "VC Heist Herenthout",
-            "ptn": 19.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "03.",
-            "team": "VBC Zandhoven G",
-            "ptn": 18.0,
-            "wed": 7.0,
-            "is_zandhoven": true
-        },
-        {
-            "pos": "04.",
-            "team": "Volley Westerlo F",
-            "ptn": 15.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05.",
-            "team": "V O L A K  Vorselaar D",
-            "ptn": 14.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "06.",
-            "team": "Volley Westerlo D",
-            "ptn": 13.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "07.",
-            "team": "VC St.Janskring Herentals",
-            "ptn": 12.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08a.",
-            "team": "Bovoc Bouwel C",
-            "ptn": 10.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08b.",
-            "team": "VBC Zandhoven F",
-            "ptn": 10.0,
-            "wed": 8.0,
-            "is_zandhoven": true
-        },
-        {
-            "pos": "10.",
-            "team": "Taelman Construct Mendo Booischot E",
-            "ptn": 9.0,
-            "wed": 9.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "11a.",
-            "team": "Volley Westerlo E",
-            "ptn": 3.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "11b.",
-            "team": "VC Olen B",
-            "ptn": 3.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "13.",
-            "team": "FH Nijlen F",
-            "ptn": 0.0,
-            "wed": 8.0,
             "is_zandhoven": false
         }
     ]
