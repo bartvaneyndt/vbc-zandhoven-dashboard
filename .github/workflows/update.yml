@@ -2,7 +2,7 @@ name: Update VBC Zandhoven Standen
 
 on:
   schedule:
-    - cron: '0 * * * *' # Elk uur automatisch
+    - cron: '17 * * * *' # Elk uur automatisch
   workflow_dispatch:
 
 jobs:
