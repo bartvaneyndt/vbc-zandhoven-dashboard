@@ -522,92 +522,6 @@
             "is_zandhoven": false
         }
     ],
-    "Nationale 3 Dames C (reserven)": [
-        {
-            "pos": "01.",
-            "team": "VBC Zandhoven B",
-            "ptn": 17.0,
-            "wed": 7.0,
-            "is_zandhoven": true
-        },
-        {
-            "pos": "02.",
-            "team": "KwadrO Amigos Sint-Antonius Zoersel B",
-            "ptn": 16.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "03.",
-            "team": "Grinta Valentino Lint B",
-            "ptn": 15.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "04.",
-            "team": "Golazo Haasrode Leuven B",
-            "ptn": 14.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05.",
-            "team": "Vamos Stekene - Sint-Gillis-Waas B",
-            "ptn": 13.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "06.",
-            "team": "Tamera Lummen A",
-            "ptn": 12.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "07a.",
-            "team": "VC Oudegem B",
-            "ptn": 9.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "07b.",
-            "team": "Wolvertem Sporting A",
-            "ptn": 9.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "07c.",
-            "team": "VST Lions Groot-Turnhout A",
-            "ptn": 9.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10a.",
-            "team": "Geel Zwart Wijnegem A",
-            "ptn": 5.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10b.",
-            "team": "Volley Beerse A",
-            "ptn": 5.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "10c.",
-            "team": "Davost Sint-Truiden A",
-            "ptn": 5.0,
-            "wed": 8.0,
-            "is_zandhoven": false
-        }
-    ],
     "Meisjes U17 Niveau 1 A": [
         {
             "pos": "01.",
@@ -1189,5 +1103,8 @@
             "wed": 5.0,
             "is_zandhoven": false
         }
-    ]
+    ],
+    "_meta": {
+        "last_updated": "2026-11-11 11:15:43"
+    }
 }
