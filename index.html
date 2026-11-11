@@ -94,6 +94,12 @@
 
                 // Loop door elke categorie/reeks in de JSON
                 for (const [category, teams] of Object.entries(data)) {
+                    // Sla de _meta sleutel over zodat deze niet als ranglijst wordt behandeld
+                    if (category === "_meta") continue;
+
+                    // Controleer of 'teams' wel degelijk een array is
+                    if (!Array.isArray(teams)) continue;
+
                     const card = document.createElement('div');
                     card.className = 'category-card';
 
