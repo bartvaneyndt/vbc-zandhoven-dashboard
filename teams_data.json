@@ -380,42 +380,42 @@
             "is_zandhoven": false
         },
         {
-            "pos": "06a.",
+            "pos": "06.",
             "team": "Volleybal Club Berlaar B",
-            "ptn": 10.0,
-            "wed": 7.0,
+            "ptn": 11.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
-            "pos": "06b.",
+            "pos": "07.",
             "team": "V O L A K  Vorselaar B",
             "ptn": 10.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "08a.",
+            "pos": "08.",
+            "team": "FH Nijlen D",
+            "ptn": 9.0,
+            "wed": 7.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "09a.",
             "team": "V O L A K  Vorselaar C",
             "ptn": 7.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "08b.",
+            "pos": "09b.",
             "team": "Volley Westerlo C",
             "ptn": 7.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "08c.",
-            "team": "FH Nijlen D",
-            "ptn": 7.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "08d.",
+            "pos": "09c.",
             "team": "Volley Westerlo B",
             "ptn": 7.0,
             "wed": 7.0,
@@ -1105,6 +1105,6 @@
         }
     ],
     "_meta": {
-        "last_updated": "2026-11-11 11:47:02"
+        "last_updated": "2026-11-11 12:52:39"
     }
 }
