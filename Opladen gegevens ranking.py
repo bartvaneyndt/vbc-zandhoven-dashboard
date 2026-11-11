@@ -32,7 +32,6 @@ for sheet_name in wb.sheet_names():
 
         # Categorie of reeks herkennen
         if val0 and not val0.startswith("0") and not val0.startswith("1") and val0 not in ["Reserve", "Ploeg", ""]:
-            # Als we al teams hadden verzameld voor een vorige categorie, slaan we die eerst op
             if teams_in_table:
                 all_rankings[current_cat] = teams_in_table
                 teams_in_table = []
@@ -55,30 +54,28 @@ for sheet_name in wb.sheet_names():
         all_rankings[current_cat] = teams_in_table
 
 # -------------------------------------------------------------
-# 3. Herorganiseren van de volgorde van reeksen / categorieën
+# 3. Herorganiseren en bundelen van de Dames-reeksen
 # -------------------------------------------------------------
-# Definieer hier de exacte weergavevolgorde van de senioren/dames reeksen.
-# Pas de namen indien nodig exact aan zoals ze in het Excel-bestand voorkomen.
+# Exacte namen zoals ze in het Excel-bestand (sheet_names) voorkomen:
 preferred_order = [
-    "Heren Promo 1",
-    "Dames Promo 1",
-    "Dames Promo 2 A",
-    "Dames Promo 2 B",
-    "Dames Promo 4",
-    "Dames Promo 5",
+    "Nationale 1 Dames",
+    "Nationale 3 Dames C",
+    "Dames promo 2 A",
+    "Dames promo 2 B",
+    "Dames promo 4 (1e gewest Herentals)",
+    "Dames promo 5 (2e gewest Herentals)"
 ]
 
 ordered_rankings = {}
 
-# 1. Voeg eerst de reeksen toe uit de preferred_order (als ze in all_rankings bestaan)
+# 1. Voeg eerst alle Dames-reeksen toe in de gewenste volgorde
 for cat in preferred_order:
     for key in list(all_rankings.keys()):
-        # Met strip() vangen we eventuele extra spaties op
         if key.strip() == cat.strip():
             ordered_rankings[key] = all_rankings[key]
             break
 
-# 2. Voeg alle overige reeksen toe (zoals de jeugdteams/U-teams) in hun originele volgorde
+# 2. Voeg alle overige categorieën (zoals alle jeugdteams U17, U15, U13, U11) toe in hun originele volgorde
 for key, value in all_rankings.items():
     if key not in ordered_rankings:
         ordered_rankings[key] = value
@@ -88,4 +85,4 @@ output_json = "teams_data.json"
 with open(output_json, "w", encoding="utf-8") as f:
     json.dump(ordered_rankings, f, ensure_ascii=False, indent=4)
 
-print(f"Klaar! Volledige tabellen in de gewenste volgorde opgeslagen in '{output_json}'.")
+print(f"Klaar! Alle Dames-reeksen mooi gebundeld en opgeslagen in '{output_json}'.")
