@@ -80,6 +80,14 @@ for key, value in all_rankings.items():
     if key not in ordered_rankings:
         ordered_rankings[key] = value
 
+# stukje script om generatie json bestand te pushen
+import datetime
+
+# Voeg een metagegeven toe aan je dictionary zodat de inhoud altijd verandert
+all_rankings["_meta"] = {
+    "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+}
+
 # 4. Sla de geordende resultaten op in teams_data.json
 output_json = "teams_data.json"
 with open(output_json, "w", encoding="utf-8") as f:
