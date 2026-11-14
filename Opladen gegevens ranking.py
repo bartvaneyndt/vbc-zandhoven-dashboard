@@ -113,7 +113,6 @@ base_css = """
         font-size: 1.1rem;
     }
     .container {
-        /* Dwingt exact 3 kolommen naast elkaar af voor het Full HD scherm */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -166,42 +165,62 @@ base_css = """
 """
 
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+total_chunks = len(chunks)
 
 for index, chunk in enumerate(chunks):
     file_name = "index.html" if index == 0 else f"slide{index + 1}.html"
+    slide_num = index + 1
     
-    html_content = f"""<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1920, initial-scale=1.0">
-    <title>VBC Zandhoven - Live Standen (Deel {index + 1})</title>
-    {base_css}
-</head>
-<body>
-
-    <h1>VBC Zandhoven</h1>
-    <div class="subtitle">Live Ranglijsten & Competitiestanden — Slide {index + 1} van {len(chunks)}</div>
-
-    <div class="container">
-"""
+    html_lines = [
+        "<!DOCTYPE html>",
+        '<html lang="nl">',
+        "<head>",
+        '    <meta charset="UTF-8">',
+        '    <meta name="viewport" content="width=1920, initial-scale=1.0">',
+        f"    <title>VBC Zandhoven - Live Standen (Deel {slide_num})</title>",
+        base_css,
+        "</head>",
+        "<body>",
+        "",
+        "    <h1>VBC Zandhoven</h1>",
+        f'    <div class="subtitle">Live Ranglijsten & Competitiestanden — Slide {slide_num} van {total_chunks}</div>',
+        "",
+        '    <div class="container">'
+    ]
 
     for category, teams in chunk:
-        html_content += f"""
-        <div class="category-card">
-            <h2>{category}</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 35px;">P</th>
-                        <th>Ploeg</th>
-                        <th class="center" style="width: 45px;">Ptn</th>
-                        <th class="center" style="width: 45px;">Wed</th>
-                    </tr>
-                </thead>
-                <tbody>
-        """
+        html_lines.append('        <div class="category-card">')
+        html_lines.append(f'            <h2>{category}</h2>')
+        html_lines.append('            <table>')
+        html_lines.append('                <thead>')
+        html_lines.append('                    <tr>')
+        html_lines.append('                        <th style="width: 35px;">P</th>')
+        html_lines.append('                        <th>Ploeg</th>')
+        html_lines.append('                        <th class="center" style="width: 45px;">Ptn</th>')
+        html_lines.append('                        <th class="center" style="width: 45px;">Wed</th>')
+        html_lines.append('                    </tr>')
+        html_lines.append('                </thead>')
+        html_lines.append('                <tbody>')
+
         for team in teams:
-            row_class = 'zandhoven-row' if team['is_zandhoven'] else ''
-            html_content += f"""
-                    <tr class="{row_class}">
+            row_class = ' class="zandhoven-row"' if team['is_zandhoven'] else ''
+            html_lines.append(f'                    <tr{row_class}>')
+            html_lines.append(f'                        <td>{team["pos"]}</td>')
+            html_lines.append(f'                        <td>{team["team"]}</td>')
+            html_lines.append(f'                        <td class="center">{team["ptn"]}</td>')
+            html_lines.append(f'                        <td class="center">{team["wed"]}</td>')
+            html_lines.append('                    </tr>')
+
+        html_lines.append('                </tbody>')
+        html_lines.append('            </table>')
+        html_lines.append('        </div>')
+
+    html_lines.append('    </div>')
+    html_lines.append(f'    <div class="footer-info">Laatste update: {timestamp}</div>')
+    html_lines.append("</body>")
+    html_lines.append("</html>")
+
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write("\n".join(html_lines))
+
+print(f"Klaar! {total_chunks} HTML-slides succesvol gegenereerd.")
