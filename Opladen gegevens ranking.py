@@ -22,7 +22,7 @@ print("2. Bezig met inlezen van alle volledige ranglijsten...")
 wb = xlrd.open_workbook(LOCAL_FILE, ignore_workbook_corruption=True)
 all_rankings = {}
 
-# Reeksen/categorieën die je bewust wilt uitsluiten
+# Reeksen/categorieën die je bewust wilt uitsluiten[cite: 2]
 EXCLUDE_CATEGORIES = [
     "Nationale 3 Dames C (reserven)"
 ]
@@ -36,16 +36,15 @@ for sheet_name in wb.sheet_names():
         row_vals = [sheet.cell_value(r, c) for c in range(sheet.ncols)]
         val0 = str(row_vals[0]).strip()
 
-        # Categorie of reeks herkennen
+        # Categorie of reeks herkennen[cite: 2]
         if val0 and not val0.startswith("0") and not val0.startswith("1") and val0 not in ["Reserve", "Ploeg", ""]:
             if teams_in_table:
-                # Sla op mits de categorie niet in de uitsluitingslijst staat
                 if current_cat.strip() not in EXCLUDE_CATEGORIES:
                     all_rankings[current_cat] = teams_in_table
                 teams_in_table = []
             current_cat = val0
 
-        # Controleer of dit een rij is met een positie en teamnaam
+        # Controleer of dit een rij is met een positie en teamnaam[cite: 2]
         if val0 and (val0.endswith(".") or val0[:-1].isdigit()):
             team_name = str(row_vals[1]).strip() if len(row_vals) > 1 else ""
             if team_name and team_name != "Ploeg":
@@ -57,12 +56,11 @@ for sheet_name in wb.sheet_names():
                     "is_zandhoven": "Zandhoven" in team_name
                 })
 
-    # Sla de laatste categorie van de sheet ook op (als deze niet uitgesloten is)
     if teams_in_table and current_cat.strip() not in EXCLUDE_CATEGORIES:
         all_rankings[current_cat] = teams_in_table
 
 # -------------------------------------------------------------
-# 3. Herorganiseren van de Dames-reeksen
+# 3. Herorganiseren van de Dames-reeksen[cite: 2]
 # -------------------------------------------------------------
 preferred_order = [
     "Nationale 1 Dames",
@@ -75,26 +73,156 @@ preferred_order = [
 
 ordered_rankings = {}
 
-# Voeg eerst alle gewenste Dames-reeksen toe
 for cat in preferred_order:
     for key in list(all_rankings.keys()):
         if key.strip() == cat.strip():
             ordered_rankings[key] = all_rankings[key]
             break
 
-# Voeg alle overige categorieën (jeugd) toe
 for key, value in all_rankings.items():
     if key not in ordered_rankings:
         ordered_rankings[key] = value
 
-# Voeg de meta-timestamp toe voor automatische updates
-ordered_rankings["_meta"] = {
-    "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-}
+# -------------------------------------------------------------
+# 4. Automatisch genereren van opgesplitste HTML-slides
+# -------------------------------------------------------------
+categories = list(ordered_rankings.items())
+chunk_size = 3  # Aantal tabellen per pagina/slide (pas dit aan naar wens)
+chunks = [categories[i:i + chunk_size] for i in range(0, len(categories), chunk_size)]
 
-# 4. Sla op in teams_data.json
-output_json = "teams_data.json"
-with open(output_json, "w", encoding="utf-8") as f:
-    json.dump(ordered_rankings, f, ensure_ascii=False, indent=4)
+base_css = """
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #ff0000;
+        margin-bottom: 5px;
+    }
+    .subtitle {
+        text-align: center;
+        color: #aaaaaa;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 25px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .category-card {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    h2 {
+        font-size: 1.2rem;
+        color: #ffaa00;
+        margin-top: 0;
+        border-bottom: 2px solid #333;
+        padding-bottom: 8px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 0.95rem;
+    }
+    th, td {
+        padding: 8px 10px;
+        text-align: left;
+        border-bottom: 1px solid #2c2c2c;
+    }
+    th {
+        background-color: #2a2a2a;
+        color: #ccc;
+    }
+    .zandhoven-row {
+        background-color: rgba(255, 102, 0, 0.25);
+        font-weight: bold;
+        color: #ff9944;
+    }
+    .center {
+        text-align: center;
+    }
+    .footer-info {
+        text-align: center;
+        color: #666;
+        margin-top: 20px;
+        font-size: 0.85rem;
+    }
+</style>
+"""
 
-print(f"Klaar! Geordend en zonder reserven opgeslagen in '{output_json}'.")
+timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+for index, chunk in enumerate(chunks):
+    # index 0 wordt index.html, de volgende worden slide2.html, slide3.html, etc.
+    file_name = "index.html" if index == 0 else f"slide{index + 1}.html"
+    
+    html_content = f"""<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>VBC Zandhoven - Live Standen (Deel {index + 1})</title>
+    {base_css}
+</head>
+<body>
+
+    <h1>VBC Zandhoven</h1>
+    <div class="subtitle">Live Ranglijsten & Competitiestanden — Slide {index + 1} van {len(chunks)}</div>
+
+    <div class="container">
+"""
+
+    for category, teams in chunk:
+        html_content += f"""
+        <div class="category-card">
+            <h2>{category}</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40px;">P</th>
+                        <th>Ploeg</th>
+                        <th class="center" style="width: 50px;">Ptn</th>
+                        <th class="center" style="width: 50px;">Wed</th>
+                    </tr>
+                </thead>
+                <tbody>
+        """
+        for team in teams:
+            row_class = 'zandhoven-row' if team['is_zandhoven'] else ''
+            html_content += f"""
+                    <tr class="{row_class}">
+                        <td>{team['pos']}</td>
+                        <td>{team['team']}</td>
+                        <td class="center">{team['ptn']}</td>
+                        <td class="center">{team['wed']}</td>
+                    </tr>
+            """
+        html_content += """
+                </tbody>
+            </table>
+        </div>
+        """
+
+    html_content += f"""
+    </div>
+    <div class="footer-info">Laatste update: {timestamp}</div>
+</body>
+</html>
+"""
+
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write(html_content)
+
+print(f"Klaar! {len(chunks)} HTML-slides succesvol gegenereerd.")
