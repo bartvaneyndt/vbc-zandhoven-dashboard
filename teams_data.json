@@ -260,17 +260,17 @@
     "Dames promo 2 B": [
         {
             "pos": "01.",
+            "team": "VBC Zandhoven D",
+            "ptn": 22.0,
+            "wed": 8.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "02.",
             "team": "Arvoc A",
             "ptn": 20.0,
             "wed": 8.0,
             "is_zandhoven": false
-        },
-        {
-            "pos": "02.",
-            "team": "VBC Zandhoven D",
-            "ptn": 19.0,
-            "wed": 7.0,
-            "is_zandhoven": true
         },
         {
             "pos": "03.",
@@ -283,7 +283,7 @@
             "pos": "04.",
             "team": "Olmense V.C. A",
             "ptn": 14.0,
-            "wed": 6.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -859,23 +859,23 @@
     "Meisjes U13 Niveau 1 E": [
         {
             "pos": "01.",
+            "team": "VBC Zandhoven B",
+            "ptn": 17.0,
+            "wed": 7.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "02.",
             "team": "VBC Zandhoven A",
             "ptn": 15.0,
             "wed": 5.0,
             "is_zandhoven": true
         },
         {
-            "pos": "02.",
-            "team": "VBC Zandhoven B",
-            "ptn": 14.0,
-            "wed": 6.0,
-            "is_zandhoven": true
-        },
-        {
             "pos": "03.",
             "team": "Grinta Valentino Lint A",
-            "ptn": 11.0,
-            "wed": 6.0,
+            "ptn": 12.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -890,8 +890,8 @@
         {
             "pos": "01.",
             "team": "FH Nijlen A",
-            "ptn": 18.0,
-            "wed": 6.0,
+            "ptn": 21.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -903,38 +903,38 @@
         },
         {
             "pos": "02b.",
+            "team": "Dosko@Ristorno Essen A (+)",
+            "ptn": 16.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "02c.",
             "team": "VOS Schilde A (G)",
             "ptn": 16.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04a.",
+            "pos": "05.",
             "team": "KVC Zoersel A( (+)",
             "ptn": 15.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04b.",
-            "team": "Dosko@Ristorno Essen A (+)",
-            "ptn": 15.0,
+            "pos": "06.",
+            "team": "W.E.K. Loenhout A",
+            "ptn": 14.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "06.",
+            "pos": "07.",
             "team": "VBC Zandhoven D",
             "ptn": 13.0,
             "wed": 6.0,
             "is_zandhoven": true
-        },
-        {
-            "pos": "07.",
-            "team": "W.E.K. Loenhout A",
-            "ptn": 11.0,
-            "wed": 6.0,
-            "is_zandhoven": false
         },
         {
             "pos": "08.",
@@ -944,17 +944,17 @@
             "is_zandhoven": false
         },
         {
-            "pos": "09.",
+            "pos": "09a.",
             "team": "VBC Zandhoven E",
             "ptn": 7.0,
             "wed": 5.0,
             "is_zandhoven": true
         },
         {
-            "pos": "10.",
+            "pos": "09b.",
             "team": "V O L A K  Vorselaar A",
-            "ptn": 6.0,
-            "wed": 5.0,
+            "ptn": 7.0,
+            "wed": 6.0,
             "is_zandhoven": false
         }
     ],
@@ -1105,6 +1105,6 @@
         }
     ],
     "_meta": {
-        "last_updated": "2026-11-14 11:53:20"
+        "last_updated": "2026-11-14 13:10:18"
     }
 }
