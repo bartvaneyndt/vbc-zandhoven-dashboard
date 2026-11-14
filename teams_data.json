@@ -648,23 +648,23 @@
     "Meisjes U15 Niveau 1 C": [
         {
             "pos": "01.",
+            "team": "KwadrO Amigos Sint-Antonius Zoersel A",
+            "ptn": 16.0,
+            "wed": 6.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "02.",
             "team": "VBC Zandhoven A",
             "ptn": 15.0,
             "wed": 5.0,
             "is_zandhoven": true
         },
         {
-            "pos": "02.",
-            "team": "KwadrO Amigos Sint-Antonius Zoersel A",
-            "ptn": 13.0,
-            "wed": 5.0,
-            "is_zandhoven": false
-        },
-        {
             "pos": "03.",
             "team": "VBC Zandhoven B",
-            "ptn": 11.0,
-            "wed": 6.0,
+            "ptn": 12.0,
+            "wed": 7.0,
             "is_zandhoven": true
         },
         {
@@ -1105,6 +1105,6 @@
         }
     ],
     "_meta": {
-        "last_updated": "2026-11-14 13:10:18"
+        "last_updated": "2026-11-14 14:02:10"
     }
 }
