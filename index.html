@@ -3,190 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1920, initial-scale=1.0">
-    <title>VBC Zandhoven - Live Standen Dashboard</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #ff0000;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            text-align: center;
-            color: #aaaaaa;
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 25px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        .category-card {
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-        h2 {
-            font-size: 1.2rem;
-            color: #ffaa00;
-            margin-top: 0;
-            border-bottom: 2px solid #333;
-            padding-bottom: 8px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            font-size: 0.95rem;
-        }
-        th, td {
-            padding: 8px 10px;
-            text-align: left;
-            border-bottom: 1px solid #2c2c2c;
-        }
-        th {
-            background-color: #2a2a2a;
-            color: #ccc;
-        }
-        /* Accentkleur voor VBC Zandhoven rijen */
-        .zandhoven-row {
-            background-color: rgba(255, 102, 0, 0.25);
-            font-weight: bold;
-            color: #ff9944;
-        }
-        .center {
-            text-align: center;
-        }
-        .right {
-            text-align: right;
-        }
-    </style>
+    <title>VBC Zandhoven - Live Standen (Deel 1)</title>
+    
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #ff0000;
+        margin-bottom: 5px;
+    }
+    .subtitle {
+        text-align: center;
+        color: #aaaaaa;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 25px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .category-card {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    h2 {
+        font-size: 1.2rem;
+        color: #ffaa00;
+        margin-top: 0;
+        border-bottom: 2px solid #333;
+        padding-bottom: 8px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 0.95rem;
+    }
+    th, td {
+        padding: 8px 10px;
+        text-align: left;
+        border-bottom: 1px solid #2c2c2c;
+    }
+    th {
+        background-color: #2a2a2a;
+        color: #ccc;
+    }
+    .zandhoven-row {
+        background-color: rgba(255, 102, 0, 0.25);
+        font-weight: bold;
+        color: #ff9944;
+    }
+    .center {
+        text-align: center;
+    }
+    .footer-info {
+        text-align: center;
+        color: #666;
+        margin-top: 20px;
+        font-size: 0.85rem;
+    }
+</style>
+
 </head>
 <body>
 
     <h1>VBC Zandhoven</h1>
-    <div class="subtitle">Live Ranglijsten & Competitiestanden</div>
+    <div class="subtitle">Live Ranglijsten & Competitiestanden — Slide 1 van 6</div>
 
-    <div id="dashboard-container" class="container">
-        <p class="center" style="grid-column: 1 / -1;">Gegevens worden geladen...</p>
+    <div class="container">
+
+        <div class="category-card">
+            <h2>Nationale 1 Dames</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40px;">P</th>
+                        <th>Ploeg</th>
+                        <th class="center" style="width: 50px;">Ptn</th>
+                        <th class="center" style="width: 50px;">Wed</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <tr class="">
+                        <td>01a.</td>
+                        <td>Limal Ottignies Smashing A</td>
+                        <td class="center">21.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>01b.</td>
+                        <td>Darta Bevo Roeselare B</td>
+                        <td class="center">21.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>03.</td>
+                        <td>Golazo Haasrode Leuven A</td>
+                        <td class="center">18.0</td>
+                        <td class="center">6.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>04a.</td>
+                        <td>Topsport School Vilvoorde A</td>
+                        <td class="center">15.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>04b.</td>
+                        <td>Waremme Volley A</td>
+                        <td class="center">15.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>06.</td>
+                        <td>Grinta Valentino Lint A</td>
+                        <td class="center">8.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>07.</td>
+                        <td>Hellvoc Hemiksem-Schelle A</td>
+                        <td class="center">7.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>08.</td>
+                        <td>Stalvoc Allimex Beverlo A</td>
+                        <td class="center">6.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>09.</td>
+                        <td>KVC Zoersel A</td>
+                        <td class="center">5.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="zandhoven-row">
+                        <td>10.</td>
+                        <td>VBC Zandhoven A</td>
+                        <td class="center">4.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>11.</td>
+                        <td>Wevoc Wellen A</td>
+                        <td class="center">3.0</td>
+                        <td class="center">6.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>12.</td>
+                        <td>Koninklijke Msiks Blaasveld VC A</td>
+                        <td class="center">0.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="category-card">
+            <h2>Nationale 3 Dames C</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40px;">P</th>
+                        <th>Ploeg</th>
+                        <th class="center" style="width: 50px;">Ptn</th>
+                        <th class="center" style="width: 50px;">Wed</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <tr class="">
+                        <td>01a.</td>
+                        <td>Tamera Lummen A</td>
+                        <td class="center">18.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>01b.</td>
+                        <td>Vamos Stekene - Sint-Gillis-Waas B</td>
+                        <td class="center">18.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>03.</td>
+                        <td>KwadrO Amigos Sint-Antonius Zoersel B</td>
+                        <td class="center">15.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>04.</td>
+                        <td>VST Lions Groot-Turnhout A</td>
+                        <td class="center">14.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>05a.</td>
+                        <td>VC Oudegem B</td>
+                        <td class="center">13.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>05b.</td>
+                        <td>Grinta Valentino Lint B</td>
+                        <td class="center">13.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="zandhoven-row">
+                        <td>07.</td>
+                        <td>VBC Zandhoven B</td>
+                        <td class="center">10.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>08.</td>
+                        <td>Volley Beerse A</td>
+                        <td class="center">9.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>09.</td>
+                        <td>Golazo Haasrode Leuven B</td>
+                        <td class="center">7.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>10a.</td>
+                        <td>Davost Sint-Truiden A</td>
+                        <td class="center">5.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>10b.</td>
+                        <td>Wolvertem Sporting A</td>
+                        <td class="center">5.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>12.</td>
+                        <td>Geel Zwart Wijnegem A</td>
+                        <td class="center">2.0</td>
+                        <td class="center">6.0</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="category-card">
+            <h2>Dames promo 2 A</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40px;">P</th>
+                        <th>Ploeg</th>
+                        <th class="center" style="width: 50px;">Ptn</th>
+                        <th class="center" style="width: 50px;">Wed</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <tr class="">
+                        <td>01.</td>
+                        <td>KwadrO Amigos Sint-Antonius Zoersel D</td>
+                        <td class="center">21.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>02.</td>
+                        <td>Hellvoc Hemiksem-Schelle B</td>
+                        <td class="center">18.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>03a.</td>
+                        <td>KwadrO Amigos Sint-Antonius Zoersel C</td>
+                        <td class="center">16.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>03b.</td>
+                        <td>Wavoc Waverse A</td>
+                        <td class="center">16.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="zandhoven-row">
+                        <td>05.</td>
+                        <td>VBC Zandhoven C</td>
+                        <td class="center">15.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>06a.</td>
+                        <td>Volmar Ekeren A</td>
+                        <td class="center">12.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>06b.</td>
+                        <td>WOVo A</td>
+                        <td class="center">12.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>08a.</td>
+                        <td>Woka Wommelgem A</td>
+                        <td class="center">8.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>08b.</td>
+                        <td>W.E.K. Loenhout A</td>
+                        <td class="center">8.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>10.</td>
+                        <td>Volleybal Club Berlaar A</td>
+                        <td class="center">6.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>11.</td>
+                        <td>Fixit Volley Kalmthout B</td>
+                        <td class="center">2.0</td>
+                        <td class="center">7.0</td>
+                    </tr>
+            
+                    <tr class="">
+                        <td>12.</td>
+                        <td>Mavoc-Mechelen B</td>
+                        <td class="center">1.0</td>
+                        <td class="center">8.0</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </div>
+        
     </div>
-
-    <script>
-        async function loadStandings() {
-            try {
-                // Haalt het JSON-bestand op dat door je GitHub Action wordt bijgewerkt
-                const response = await fetch('teams_data.json');
-                if (!response.ok) throw new Error('Kon teams_data.json niet ophalen');
-                
-                const data = await response.json();
-                const container = document.getElementById('dashboard-container');
-                container.innerHTML = '';
-
-                // Loop door elke categorie/reeks in de JSON
-                for (const [category, teams] of Object.entries(data)) {
-                    // Sla de _meta sleutel over zodat deze niet als ranglijst wordt behandeld
-                    if (category === "_meta") continue;
-
-                    // Controleer of 'teams' wel degelijk een array is
-                    if (!Array.isArray(teams)) continue;
-
-                    const card = document.createElement('div');
-                    card.className = 'category-card';
-
-                    let tableHTML = `
-                        <h2>${category}</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th style="width: 40px;">P</th>
-                                    <th>Ploeg</th>
-                                    <th class="center" style="width: 50px;">Ptn</th>
-                                    <th class="center" style="width: 50px;">Wed</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                    `;
-
-                    teams.forEach(team => {
-                        // Bepaalt of deze rij VBC Zandhoven is voor de opmaak
-                        const rowClass = team.is_zandhoven ? 'zandhoven-row' : '';
-                        tableHTML += `
-                            <tr class="${rowClass}">
-                                <td>${team.pos}</td>
-                                <td>${team.team}</td>
-                                <td class="center">${team.ptn}</td>
-                                <td class="center">${team.wed}</td>
-                            </tr>
-                        `;
-                    });
-
-                    tableHTML += `</tbody></table>`;
-                    card.innerHTML = tableHTML;
-                    container.appendChild(card);
-                }
-
-            } catch (error) {
-                console.error('Fout bij het laden van de standen:', error);
-                document.getElementById('dashboard-container').innerHTML = 
-                    `<p class="center" style="grid-column: 1 / -1; color: #ff4444;">Fout bij laden van teams_data.json. Controleer of het bestand bestaat.</p>`;
-            }
-        }
-
-        // Laad direct bij openen en vernieuw elke 5 minuten automatisch
-        loadStandings();
-        setInterval(loadStandings, 300000);
-    </script>
-<style>
-  /* Zorgt ervoor dat de browser de scrollbeweging automatisch soepel animeert */
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
-<script>
-  // Pas dit getal aan voor de snelheid (0.4 is heel langzaam en vloeiend, 1.0 is sneller)
-  const scrollSpeed = 2.5; 
-  let isPaused = false;
-
-  function smoothStepScroll() {
-    if (isPaused) return;
-
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const currentScroll = window.scrollY;
-
-    // Als we bijna onderaan zijn
-    if (currentScroll >= maxScroll - 5) {
-      isPaused = true;
-      setTimeout(() => {
-        // Scroll in één keer soepel terug naar boven
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        setTimeout(() => {
-          isPaused = false; // Hervat het automatisch scrollen na de animatie
-        }, 2000); // Wacht 2 seconden nadat hij boven is voordat hij opnieuw begint
-      }, 2000); // Wacht 2 seconden onderaan
-    } else {
-      // Verplaats de pagina met een fractie van een pixel per frame
-      window.scrollBy(0, scrollSpeed);
-    }
-
-    requestAnimationFrame(smoothStepScroll);
-  }
-
-  // Start de loop pas nadat de pagina volledig is geladen
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      requestAnimationFrame(smoothStepScroll);
-    }, 1500);
-  });
-</script>
+    <div class="footer-info">Laatste update: 2026-11-14 17:50:02</div>
 </body>
 </html>
