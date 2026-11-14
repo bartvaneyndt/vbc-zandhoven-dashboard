@@ -175,50 +175,50 @@
         {
             "pos": "01.",
             "team": "KwadrO Amigos Sint-Antonius Zoersel D",
-            "ptn": 18.0,
+            "ptn": 21.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "02a.",
+            "team": "KwadrO Amigos Sint-Antonius Zoersel C",
+            "ptn": 16.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "02.",
+            "pos": "02b.",
             "team": "Wavoc Waverse A",
             "ptn": 16.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "03.",
+            "pos": "04a.",
+            "team": "VBC Zandhoven C",
+            "ptn": 15.0,
+            "wed": 8.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "04b.",
             "team": "Hellvoc Hemiksem-Schelle B",
             "ptn": 15.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04.",
-            "team": "KwadrO Amigos Sint-Antonius Zoersel C",
-            "ptn": 13.0,
-            "wed": 6.0,
-            "is_zandhoven": false
-        },
-        {
-            "pos": "05a.",
-            "team": "VBC Zandhoven C",
-            "ptn": 12.0,
-            "wed": 7.0,
-            "is_zandhoven": true
-        },
-        {
-            "pos": "05b.",
+            "pos": "06a.",
             "team": "Volmar Ekeren A",
             "ptn": 12.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
-            "pos": "05c.",
+            "pos": "06b.",
             "team": "WOVo A",
             "ptn": 12.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         },
         {
@@ -253,7 +253,7 @@
             "pos": "12.",
             "team": "Mavoc-Mechelen B",
             "ptn": 1.0,
-            "wed": 7.0,
+            "wed": 8.0,
             "is_zandhoven": false
         }
     ],
@@ -603,17 +603,17 @@
             "is_zandhoven": false
         },
         {
-            "pos": "06.",
+            "pos": "06a.",
             "team": "VBC Zandhoven C",
             "ptn": 16.0,
             "wed": 7.0,
             "is_zandhoven": true
         },
         {
-            "pos": "07.",
+            "pos": "06b.",
             "team": "Volmar Ekeren (+)",
-            "ptn": 13.0,
-            "wed": 6.0,
+            "ptn": 16.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -624,17 +624,17 @@
             "is_zandhoven": false
         },
         {
-            "pos": "09.",
+            "pos": "09a.",
             "team": "Fixit Volley Kalmthout B",
             "ptn": 9.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "10.",
+            "pos": "09b.",
             "team": "VOS Schilde (+)",
-            "ptn": 8.0,
-            "wed": 6.0,
+            "ptn": 9.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
@@ -648,17 +648,17 @@
     "Meisjes U15 Niveau 1 C": [
         {
             "pos": "01.",
+            "team": "VBC Zandhoven A",
+            "ptn": 18.0,
+            "wed": 6.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "02.",
             "team": "KwadrO Amigos Sint-Antonius Zoersel A",
             "ptn": 16.0,
             "wed": 6.0,
             "is_zandhoven": false
-        },
-        {
-            "pos": "02.",
-            "team": "VBC Zandhoven A",
-            "ptn": 15.0,
-            "wed": 5.0,
-            "is_zandhoven": true
         },
         {
             "pos": "03.",
@@ -670,8 +670,8 @@
         {
             "pos": "04.",
             "team": "V.C. Retie A",
-            "ptn": 9.0,
-            "wed": 5.0,
+            "ptn": 10.0,
+            "wed": 6.0,
             "is_zandhoven": false
         },
         {
@@ -727,23 +727,23 @@
         },
         {
             "pos": "07.",
+            "team": "De Gelmers VBC Hoogstraten B",
+            "ptn": 12.0,
+            "wed": 6.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "08.",
             "team": "Volley Noorderkempen B",
             "ptn": 11.0,
             "wed": 5.0,
             "is_zandhoven": false
         },
         {
-            "pos": "08.",
-            "team": "De Gelmers VBC Hoogstraten B",
-            "ptn": 9.0,
-            "wed": 5.0,
-            "is_zandhoven": false
-        },
-        {
             "pos": "09.",
             "team": "Volmar Ekeren A",
-            "ptn": 8.0,
-            "wed": 5.0,
+            "ptn": 9.0,
+            "wed": 6.0,
             "is_zandhoven": false
         },
         {
@@ -771,44 +771,44 @@
         },
         {
             "pos": "03.",
+            "team": "Grinta Valentino Lint C (+)",
+            "ptn": 15.0,
+            "wed": 8.0,
+            "is_zandhoven": false
+        },
+        {
+            "pos": "04.",
             "team": "Taelman Construct Mendo Booischot B",
             "ptn": 14.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04a.",
+            "pos": "05a.",
             "team": "Grinta Valentino Lint B",
             "ptn": 13.0,
             "wed": 5.0,
             "is_zandhoven": false
         },
         {
-            "pos": "04b.",
+            "pos": "05b.",
             "team": "VBC Zandhoven D",
             "ptn": 13.0,
             "wed": 6.0,
             "is_zandhoven": true
         },
         {
-            "pos": "04c.",
-            "team": "Grinta Valentino Lint C (+)",
-            "ptn": 13.0,
-            "wed": 7.0,
-            "is_zandhoven": false
-        },
-        {
             "pos": "07.",
-            "team": "Mortsel Volley Antwerpen",
-            "ptn": 10.0,
+            "team": "Bravoc Ranst",
+            "ptn": 12.0,
             "wed": 6.0,
             "is_zandhoven": false
         },
         {
             "pos": "08.",
-            "team": "Bravoc Ranst",
-            "ptn": 9.0,
-            "wed": 5.0,
+            "team": "Mortsel Volley Antwerpen",
+            "ptn": 10.0,
+            "wed": 6.0,
             "is_zandhoven": false
         },
         {
@@ -902,39 +902,39 @@
             "is_zandhoven": false
         },
         {
-            "pos": "03a.",
+            "pos": "03.",
             "team": "WOVo A",
-            "ptn": 16.0,
-            "wed": 6.0,
+            "ptn": 17.0,
+            "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "03b.",
+            "pos": "04a.",
+            "team": "VBC Zandhoven D",
+            "ptn": 16.0,
+            "wed": 7.0,
+            "is_zandhoven": true
+        },
+        {
+            "pos": "04b.",
             "team": "Dosko@Ristorno Essen A (+)",
             "ptn": 16.0,
             "wed": 8.0,
             "is_zandhoven": false
         },
         {
-            "pos": "03c.",
+            "pos": "04c.",
             "team": "VOS Schilde A (G)",
             "ptn": 16.0,
             "wed": 7.0,
             "is_zandhoven": false
         },
         {
-            "pos": "06.",
+            "pos": "07.",
             "team": "W.E.K. Loenhout A",
             "ptn": 14.0,
             "wed": 7.0,
             "is_zandhoven": false
-        },
-        {
-            "pos": "07.",
-            "team": "VBC Zandhoven D",
-            "ptn": 13.0,
-            "wed": 6.0,
-            "is_zandhoven": true
         },
         {
             "pos": "08.",
@@ -1105,6 +1105,6 @@
         }
     ],
     "_meta": {
-        "last_updated": "2026-11-14 14:55:54"
+        "last_updated": "2026-11-14 15:53:34"
     }
 }
