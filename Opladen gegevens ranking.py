@@ -3,7 +3,7 @@ import urllib.request
 import xlrd
 import datetime
 
-# De directe URL van Volleyscores
+# De directe URL van Volleyscores[cite: 2]
 EXCEL_URL = "https://www.volleyscores.be/index.php?v=2&isActiveSeason=1&t=Rankings%20AH-1717%20VBC%20Zandhoven&a=re&se=13&pi=&si=&ti=&ci=11082&mm=&ssi=&st=&w=%&f=&lng=nl"
 LOCAL_FILE = "volleyscores_rankings.xls"
 
@@ -84,10 +84,10 @@ for key, value in all_rankings.items():
         ordered_rankings[key] = value
 
 # -------------------------------------------------------------
-# 4. Automatisch genereren van opgesplitste HTML-slides
+# 4. Automatisch genereren van opgesplitste HTML-slides (3 kolommen)
 # -------------------------------------------------------------
 categories = list(ordered_rankings.items())
-chunk_size = 3  # Aantal tabellen per pagina/slide (pas dit aan naar wens)
+chunk_size = 6  # Aantal tabellen per pagina (optimaal voor 3 kolommen: 2 rijen van 3)
 chunks = [categories[i:i + chunk_size] for i in range(0, len(categories), chunk_size)]
 
 base_css = """
@@ -98,6 +98,8 @@ base_css = """
         color: #ffffff;
         margin: 0;
         padding: 20px;
+        width: 1920px;
+        box-sizing: border-box;
     }
     h1 {
         text-align: center;
@@ -107,37 +109,38 @@ base_css = """
     .subtitle {
         text-align: center;
         color: #aaaaaa;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-size: 1.1rem;
     }
     .container {
+        /* Dwingt exact 3 kolommen naast elkaar af voor het Full HD scherm */
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-        gap: 25px;
-        max-width: 1400px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1850px;
         margin: 0 auto;
     }
     .category-card {
         background-color: #1e1e1e;
         border-radius: 10px;
-        padding: 20px;
+        padding: 15px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #ffaa00;
         margin-top: 0;
         border-bottom: 2px solid #333;
-        padding-bottom: 8px;
+        padding-bottom: 6px;
     }
     table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 10px;
-        font-size: 0.95rem;
+        margin-top: 8px;
+        font-size: 0.9rem;
     }
     th, td {
-        padding: 8px 10px;
+        padding: 6px 8px;
         text-align: left;
         border-bottom: 1px solid #2c2c2c;
     }
@@ -156,7 +159,7 @@ base_css = """
     .footer-info {
         text-align: center;
         color: #666;
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 0.85rem;
     }
 </style>
@@ -165,7 +168,6 @@ base_css = """
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 for index, chunk in enumerate(chunks):
-    # index 0 wordt index.html, de volgende worden slide2.html, slide3.html, etc.
     file_name = "index.html" if index == 0 else f"slide{index + 1}.html"
     
     html_content = f"""<!DOCTYPE html>
@@ -191,10 +193,10 @@ for index, chunk in enumerate(chunks):
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 40px;">P</th>
+                        <th style="width: 35px;">P</th>
                         <th>Ploeg</th>
-                        <th class="center" style="width: 50px;">Ptn</th>
-                        <th class="center" style="width: 50px;">Wed</th>
+                        <th class="center" style="width: 45px;">Ptn</th>
+                        <th class="center" style="width: 45px;">Wed</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -225,4 +227,4 @@ for index, chunk in enumerate(chunks):
     with open(file_name, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-print(f"Klaar! {len(chunks)} HTML-slides succesvol gegenereerd.")
+print(f"Klaar! {len(chunks)} HTML-slides met 3 kolommen succesvol gegenereerd.")
