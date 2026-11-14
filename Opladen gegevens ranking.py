@@ -3,7 +3,7 @@ import urllib.request
 import xlrd
 import datetime
 
-# De directe URL van Volleyscores[cite: 2]
+# De directe URL van Volleyscores
 EXCEL_URL = "https://www.volleyscores.be/index.php?v=2&isActiveSeason=1&t=Rankings%20AH-1717%20VBC%20Zandhoven&a=re&se=13&pi=&si=&ti=&ci=11082&mm=&ssi=&st=&w=%&f=&lng=nl"
 LOCAL_FILE = "volleyscores_rankings.xls"
 
@@ -22,7 +22,7 @@ print("2. Bezig met inlezen van alle volledige ranglijsten...")
 wb = xlrd.open_workbook(LOCAL_FILE, ignore_workbook_corruption=True)
 all_rankings = {}
 
-# Reeksen/categorieën die je bewust wilt uitsluiten[cite: 2]
+# Reeksen/categorieën die je bewust wilt uitsluiten
 EXCLUDE_CATEGORIES = [
     "Nationale 3 Dames C (reserven)"
 ]
@@ -36,7 +36,7 @@ for sheet_name in wb.sheet_names():
         row_vals = [sheet.cell_value(r, c) for c in range(sheet.ncols)]
         val0 = str(row_vals[0]).strip()
 
-        # Categorie of reeks herkennen[cite: 2]
+        # Categorie of reeks herkennen
         if val0 and not val0.startswith("0") and not val0.startswith("1") and val0 not in ["Reserve", "Ploeg", ""]:
             if teams_in_table:
                 if current_cat.strip() not in EXCLUDE_CATEGORIES:
@@ -44,7 +44,7 @@ for sheet_name in wb.sheet_names():
                 teams_in_table = []
             current_cat = val0
 
-        # Controleer of dit een rij is met een positie en teamnaam[cite: 2]
+        # Controleer of dit een rij is met een positie en teamnaam
         if val0 and (val0.endswith(".") or val0[:-1].isdigit()):
             team_name = str(row_vals[1]).strip() if len(row_vals) > 1 else ""
             if team_name and team_name != "Ploeg":
@@ -60,7 +60,7 @@ for sheet_name in wb.sheet_names():
         all_rankings[current_cat] = teams_in_table
 
 # -------------------------------------------------------------
-# 3. Herorganiseren van de Dames-reeksen[cite: 2]
+# 3. Herorganiseren van de Dames-reeksen
 # -------------------------------------------------------------
 preferred_order = [
     "Nationale 1 Dames",
@@ -84,10 +84,10 @@ for key, value in all_rankings.items():
         ordered_rankings[key] = value
 
 # -------------------------------------------------------------
-# 4. Automatisch genereren van opgesplitste HTML-slides (3 kolommen)
+# 4. Automatisch genereren van opgesplitste HTML-slides (3 kolommen, 1 rij)
 # -------------------------------------------------------------
 categories = list(ordered_rankings.items())
-chunk_size = 6  # Aantal tabellen per pagina (optimaal voor 3 kolommen: 2 rijen van 3)
+chunk_size = 3  # Maximaal 3 tabellen per pagina (1 rij van 3 kolommen)
 chunks = [categories[i:i + chunk_size] for i in range(0, len(categories), chunk_size)]
 
 base_css = """
@@ -205,26 +205,3 @@ for index, chunk in enumerate(chunks):
             row_class = 'zandhoven-row' if team['is_zandhoven'] else ''
             html_content += f"""
                     <tr class="{row_class}">
-                        <td>{team['pos']}</td>
-                        <td>{team['team']}</td>
-                        <td class="center">{team['ptn']}</td>
-                        <td class="center">{team['wed']}</td>
-                    </tr>
-            """
-        html_content += """
-                </tbody>
-            </table>
-        </div>
-        """
-
-    html_content += f"""
-    </div>
-    <div class="footer-info">Laatste update: {timestamp}</div>
-</body>
-</html>
-"""
-
-    with open(file_name, "w", encoding="utf-8") as f:
-        f.write(html_content)
-
-print(f"Klaar! {len(chunks)} HTML-slides met 3 kolommen succesvol gegenereerd.")
