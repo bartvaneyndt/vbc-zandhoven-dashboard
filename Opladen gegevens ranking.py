@@ -98,8 +98,9 @@ base_css = """
         color: #ffffff;
         margin: 0;
         padding: 20px;
-        width: 1920px;
+        width: 100%;
         box-sizing: border-box;
+        overflow-x: hidden; /* Voorkomt definitief horizontale scrollbalken */
     }
     h1 {
         text-align: center;
@@ -116,14 +117,17 @@ base_css = """
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+        width: 100%;
         max-width: 1850px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
     .category-card {
         background-color: #1e1e1e;
         border-radius: 10px;
         padding: 15px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        box-sizing: border-box;
     }
     h2 {
         font-size: 1.1rem;
