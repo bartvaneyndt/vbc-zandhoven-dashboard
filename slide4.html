@@ -14,7 +14,7 @@
         padding: 20px;
         width: 100%;
         box-sizing: border-box;
-        overflow-x: hidden; /* Voorkomt definitief horizontale scrollbalken */
+        overflow-x: hidden;
     }
     h1 {
         text-align: center;
@@ -27,16 +27,19 @@
         margin-bottom: 20px;
         font-size: 1.1rem;
     }
+    /* Gebruikt Flexbox in plaats van Grid voor maximale compatibiliteit op oudere Signage speler-browsers */
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         width: 100%;
         max-width: 1850px;
         margin: 0 auto;
         box-sizing: border-box;
     }
     .category-card {
+        flex: 0 0 32%;
+        width: 32%;
         background-color: #1e1e1e;
         border-radius: 10px;
         padding: 15px;
@@ -278,6 +281,6 @@
             </table>
         </div>
     </div>
-    <div class="footer-info">Laatste update: 2026-11-16 06:43:02</div>
+    <div class="footer-info">Laatste update: 2026-11-16 09:32:44</div>
 </body>
 </html>
