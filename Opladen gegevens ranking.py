@@ -84,7 +84,7 @@ for key, value in all_rankings.items():
         ordered_rankings[key] = value
 
 # -------------------------------------------------------------
-# 4. Automatisch genereren van opgesplitste HTML-slides (3 kolommen, 1 rij)
+# 4. Automatisch genereren van opgesplitste HTML-slides (Flexbox 3 kolommen)
 # -------------------------------------------------------------
 categories = list(ordered_rankings.items())
 chunk_size = 3  # Maximaal 3 tabellen per pagina (1 rij van 3 kolommen)
@@ -100,7 +100,7 @@ base_css = """
         padding: 20px;
         width: 100%;
         box-sizing: border-box;
-        overflow-x: hidden; /* Voorkomt definitief horizontale scrollbalken */
+        overflow-x: hidden;
     }
     h1 {
         text-align: center;
@@ -113,16 +113,19 @@ base_css = """
         margin-bottom: 20px;
         font-size: 1.1rem;
     }
+    /* Gebruikt Flexbox in plaats van Grid voor maximale compatibiliteit op oudere Signage speler-browsers */
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         width: 100%;
         max-width: 1850px;
         margin: 0 auto;
         box-sizing: border-box;
     }
     .category-card {
+        flex: 0 0 32%;
+        width: 32%;
         background-color: #1e1e1e;
         border-radius: 10px;
         padding: 15px;
@@ -227,4 +230,4 @@ for index, chunk in enumerate(chunks):
     with open(file_name, "w", encoding="utf-8") as f:
         f.write("\n".join(html_lines))
 
-print(f"Klaar! {total_chunks} HTML-slides succesvol gegenereerd.")
+print(f"Klaar! {total_chunks} HTML-slides met Flexbox succesvol gegenereerd.")
